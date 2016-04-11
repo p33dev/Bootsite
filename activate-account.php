@@ -53,17 +53,11 @@ else
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Account Activation | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 </head>
 <body>
 
-	
-	<div class="modal-ish">
-  <div class="modal-header">
 <h2>Activation</h2>
-  </div>
-  <div class="modal-body">
- 
 	<?php
 				if(count($errors) > 0)
 				{
@@ -75,15 +69,10 @@ else
 
                           
 
-                          </div>
-
-  
-</div>
 
                 </form>
                 
         
-            <div class="clear"></div>
 <p style="margin-top:30px; text-align:center;">
 <a href="register.php">Sign Up</a> | <a href="login.php">Login</a> | <a href="forgot-password.php">Forgot Password?</a> | <a href="/">Home Page</a></p>
             

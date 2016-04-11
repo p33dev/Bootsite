@@ -1,10 +1,4 @@
 <?php
-	/*
-		UserPie
-		http://userpie.com
-		
-
-	*/
 	require_once("lib/config.php");
 	
 	//Prevent the user visiting the logged in page if he/she is already logged in
@@ -101,15 +95,10 @@ setcookie("userPieUser", $loggedInUser->remember_me_sessid, time()+parseLength($
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 </head>
 <body>
-
-<div class="modal-ish">
-  <div class="modal-header">
 <h2>Sign In</h2>
-  </div>
-  <div class="modal-body">
  
 
                
@@ -121,9 +110,7 @@ setcookie("userPieUser", $loggedInUser->remember_me_sessid, time()+parseLength($
         if(count($errors) > 0)
         {
         ?>
-        <div id="errors">
         <?php errorBlock($errors); ?>
-        </div>     
         <?php
         } }
         ?> 
@@ -156,19 +143,12 @@ setcookie("userPieUser", $loggedInUser->remember_me_sessid, time()+parseLength($
 	
                           
 
-                          </div>
-
             
- <div class="modal-footer">
 <input type="submit" class="btn btn-primary" name="new" id="newfeedform" value="Sign In" />
-  </div>
-  
-</div>
 
                 </form>
                 
         
-            <div class="clear"></div>
 <p style="margin-top:30px; text-align:center;">
 <a href="register.php">Sign Up</a> | <a href="forgot-password.php">Forgot Password?</a> | <a href="/">Home Page</a></p>
             

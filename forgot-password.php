@@ -1,10 +1,4 @@
 <?php
-	/*
-		UserPie Version: 1.0
-		http://userpie.com
-		
-
-	*/
 	require_once("lib/config.php");
 	
 	//Prevent the user visiting the lost password page if he/she is already logged in
@@ -202,15 +196,10 @@ if(!empty($_POST))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Forgot password | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 </head>
 <body>
-<div class="modal-ish">
-  <div class="modal-header">
         <h2>Password Reset</h2>
-  </div>
-  <div class="modal-body">
-        
         <br>
         
 		<?php
@@ -219,25 +208,19 @@ if(!empty($_POST))
             if(count($errors) > 0)
             {
 		?>
-        	<div id="errors">
             	<?php errorBlock($errors); ?>
-            </div> 
         <?
             }
 			else
 			{
 		?>
-            <div id="success">
-            
                 <p><?php echo $success_message; ?></p>
             
-            </div>
         <?
 			}
         }
         ?> 
         
-        <div id="regbox">
             <form name="newLostPass" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
             
             <p>
@@ -251,19 +234,11 @@ if(!empty($_POST))
                 <input type="text" name="email" />
             </p>
             
-        </div>
-        </div>    
-            
- <div class="modal-footer">
 <input type="submit" class="btn btn-primary" name="new" id="newfeedform" value="Reset Password" />
-</div>
                 
                 </form>
-            </div>
 
-			<div class="clear"></div>
             <p style="margin-top:30px; text-align:center;"><a href="register.php">Sign Up</a> / <a href="login.php">Login</a> / <a href="<?php echo $websiteUrl; ?>">Home Page</a></p>
-            <div class="clear"></div>
 </body>
 </html>
 

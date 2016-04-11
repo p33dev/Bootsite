@@ -1,11 +1,5 @@
 <?php 
 
-	/*
-		UserCake Version: 1.0
-		http://usercake.com
-		
-
-	*/
 	
 ?>	
 
@@ -14,56 +8,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>UserPie | <?php echo $websiteName; ?> </title>
-<?php	require_once("head_inc.php"); ?>
+<?php	require_once("inc/head_inc.php"); ?>
 
 
 
 </head>
 <body>
-<?php require_once("navbar.php"); ?>
-	<div id="content">
-    
-        
-   <!-- Carousel
-          ================================================== -->
-<div id="carousel" class="carousel">
-
-  <div class="carousel-inner">
-        <div class="item active">
-      <img src="assets/img/01.jpg" alt="Pic 1" />
-      <div class="carousel-caption">
+<?php require_once("inc/header.php"); ?>
         <p>Pic 1</p>
-      </div>
-    </div>
-        <div class="item">
-      <img src="assets/img/02.jpg" alt="Pic 2" />
-      <div class="carousel-caption">
         <p>Pic 2</p>
-      </div>
-    </div>
-        <div class="item">
-      <img src="assets/img/03.jpg" alt="Pic Pic 1" />
-      <div class="carousel-caption">
         <p>Pic 3</p>
-      </div>
-    </div>
-      </div>
-
-  <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
-
-</div>
-
-<script>
-
-$(function() {
-  
-  $('.carousel').carousel('pause');
-    
-});
-
-</script>
-
 
 
             
@@ -74,19 +28,8 @@ $(function() {
                 
 <p style="text-align:center"><a href="forgot-password.php">Forgot password</a> | <a href="resend-activation.php">Resend Activation email</a></p>
      
-            <div class="clear"></div>
-</div>
 
 
-<script>
-
-$(function() {
-  
-  $('.carousel').carousel('pause');
-    
-});
-
-</script>
 </body>
 </html>
 

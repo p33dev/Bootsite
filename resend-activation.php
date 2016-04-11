@@ -1,10 +1,4 @@
 <?php
-	/*
-		UserPie Version: 1.0
-		http://userpie.com
-		
-
-	*/
 	require_once("lib/config.php");
 	
 	//Prevent the user visiting the lost password page if he/she is already logged in
@@ -121,15 +115,10 @@ if(!empty($_POST) && $emailActivation)
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Resend Activation email | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 </head>
 <body>
-
-<div class="modal-ish">
-  <div class="modal-header">
  	 <h2>Resend Activation E-mail</h2>
-  </div>
-  <div class="modal-body"> 
  
     <?php
     if(!empty($_POST) || !empty($_GET["confirm"]) || !empty($_GET["deny"]) && $emailActivation)
@@ -138,19 +127,15 @@ if(!empty($_POST) && $emailActivation)
 			if(count($errors) > 0)
             {
 		?>
-        	<div id="errors">
             	<?php errorBlock($errors); ?>
-            </div> 
         <?
             }
 			else
 			{
 		?>
-            <div id="success">
             
                 <p><?php echo $success_message; ?></p>
             
-            </div>
         <?
 			}
         }
@@ -185,17 +170,13 @@ if(!empty($_POST) && $emailActivation)
         </form>
 
 	 <? } ?> 
-	       </div>           
-      </div>
 
 
   
   
                 
                 </form>
-            </div>
 
-			<div class="clear"></div>
             <p style="margin-top:30px; text-align:center;"><a href="register.php">Register</a> / <a href="login.php">Login</a> / <a href="forgot-password.php">Forgot Password?</a> / <a href="<?php echo $websiteUrl; ?>">Home Page</a></p>
 
 

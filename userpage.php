@@ -17,14 +17,13 @@ if (!isset($loggedInUser)) {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>UserPie | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 
 
 
 </head>
 <body>
-<?php require_once("navbar.php"); ?>
-	<div id="content">
+<?php require_once("inc/header.php"); ?>
     
         
 <h1>Welcome</h1>
@@ -44,7 +43,6 @@ if (!isset($loggedInUser)) {
             
 
             
-	</div>
 </body>
 </html>
 

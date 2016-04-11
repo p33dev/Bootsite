@@ -1,10 +1,4 @@
 <?php
-	/*
-		UserCake Version: 1.0
-		http://usercake.com
-		
-
-	*/
 	include("lib/config.php");
 	
 	//Prevent the user visiting the logged in page if he/she is not logged in
@@ -54,15 +48,11 @@ if(!empty($_POST))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Update Contact Details | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 
 </head>
 <body>
-<?php require_once("navbar.php"); ?>
-<div id="content">
-
-<div class="modal-ish">
-  <div class="modal-body">
+<?php require_once("inc/header.php"); ?>
     
     
             <?php
@@ -71,16 +61,12 @@ if(!empty($_POST))
                     if(count($errors) > 0)
                     {
                 ?>
-                <div id="errors">
                 <?php errorBlock($errors); ?>
-                </div>     
                 <?php
                      } else { ?> 
-            <div id="success">
             
                <p><?php echo lang("ACCOUNT_DETAILS_UPDATED"); ?></p>
                
-            </div>
             <?php } }?>
 
     
@@ -90,21 +76,14 @@ if(!empty($_POST))
                     <label>Email:</label>
                     <input type="text" name="email" value="<?php echo $loggedInUser->email; ?>" />
                 </p>
-               </div>
 
        
-  <div class="modal-footer">
 <input type="submit" class="btn btn-primary" name="new" id="newfeedform" value="Update" />
-  </div>
                 
                 </form>
-      </div>
       
             
-            <div class="clear"></div>
-            
               <p style="margin-top:30px; text-align:center;"><a href="/">Home</a></p>
-</div>
 </body>
 </html>
 

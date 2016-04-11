@@ -1,10 +1,4 @@
 <?php
-	/*
-		UserPie Version: 1.0
-		http://userpie.com
-		
-
-	*/
 	require_once("lib/config.php");
 	
 	//Prevent the user visiting the logged in page if he/she is already logged in
@@ -90,27 +84,12 @@ if(!empty($_POST))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Registration | <?php echo $websiteName; ?> </title>
-<?php require_once("head_inc.php"); ?>
+<?php require_once("inc/head_inc.php"); ?>
 </head>
 <body>
-<div class="modal-ish">
-  <div class="modal-header">
 <h2>Sign Up</h2>
-</div>
-  <div class="modal-body">
-
-       
-
-			
-
-
-        <div id="success">
         
            <p><?php if (isset($message)) echo $message; ?></p>
-           
-        </div>
-
-            <div id="regbox">
                 <form name="newUser" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                 
                 <p>
@@ -133,19 +112,13 @@ if(!empty($_POST))
                     <input type="text" name="email" />
                 </p>
     
-      </div>           
-      </div>
 
 
   
- <div class="modal-footer">
 <input type="submit" class="btn btn-primary" name="new" id="newfeedform" value="Register" />
-  </div>  
                 
                 </form>
-            </div>
 
-			<div class="clear"></div>
             <p style="margin-top:30px; text-align:center;"><a href="login.php">Login</a> / <a href="forgot-password.php">Forgot Password?</a> / <a href="<?php echo $websiteUrl; ?>">Home Page</a></p>
 
 </body>
