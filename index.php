@@ -8,6 +8,6 @@ if(!isUserLoggedIn())
 	
  } else { 
 
-header("Location: userpage.php"); 	 
+header("Location: home.php"); 	 
 
 } ?>

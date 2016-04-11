@@ -26,20 +26,18 @@ if (!isset($loggedInUser)) {
 <?php require_once("inc/header.php"); ?>
     
         
-<h1>Welcome</h1>
+<h1>Bienvenue ce bootsite </h1>
         
-        	<p>Welcome to your account page <strong><?php echo $loggedInUser->display_username; ?></strong></p>
+        	<p>id :  <strong><?php echo $loggedInUser->display_username; ?></strong></p>
 
 
-            <p>You are a <strong><?php  $group = $loggedInUser->groupID(); echo $group['group_name']; ?></strong></p>
+            <p>membre de :  <strong><?php  $group = $loggedInUser->groupID(); echo $group['group_name']; ?></strong></p>
           
             
-            <p>You joined on <?php echo date("l \\t\h\e jS Y",$loggedInUser->signupTimeStamp()); ?> </p>
+            <p>date d'inscription <?php echo date("l \\t\h\e jS Y",$loggedInUser->signupTimeStamp()); ?> </p>
             
 
-			<p>This page doesn't really do anything special. It's up to you to create something interesting and useful based on the framework we have provided.</p>
 			
-            <p>Using UserPie you can build just about anything: a blog, content management system, discussion forum, social network...</p>
             
 
             
