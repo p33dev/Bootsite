@@ -5,7 +5,7 @@
 		
 
 	*/
-	include("models/config.php");
+	include("lib/config.php");
 	
 	//Log the user out
 	if(isUserLoggedIn()) $loggedInUser->userLogOut();

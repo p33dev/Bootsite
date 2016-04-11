@@ -30,11 +30,11 @@ a {
 	//  Primitive installer
 	
 	
-	require_once("../models/settings.php");
+	require_once("../lib/settings.php");
 	
 	//Dbal Support - Thanks phpBB ; )
-	require_once("../models/db/".$dbtype.".php");
-	require_once("../models/funcs.user.php");
+	require_once("../lib/db/".$dbtype.".php");
+	require_once("../lib/funcs.user.php");
 	
 	//Construct a db instance
 	$db = new $sql_db();

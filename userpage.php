@@ -5,7 +5,7 @@
 		
 
 	*/
-	require_once("models/config.php");
+	require_once("lib/config.php");
 
 	/*
 	* Uncomment the "else" clause below if e.g. userpie is not at the root of your site.

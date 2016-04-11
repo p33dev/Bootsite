@@ -1,13 +1,6 @@
 <?php
 
-	/*
-		UserPie Version: 1.0
-		http://userpie.com
-		
-
-	*/
-
-require_once("models/config.php");
+require_once("lib/config.php");
 
 if(!isUserLoggedIn())
 { 

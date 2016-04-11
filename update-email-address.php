@@ -5,7 +5,7 @@
 		
 
 	*/
-	include("models/config.php");
+	include("lib/config.php");
 	
 	//Prevent the user visiting the logged in page if he/she is not logged in
 	if(!isUserLoggedIn()) { header("Location: login.php"); die(); }

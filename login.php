@@ -5,7 +5,7 @@
 		
 
 	*/
-	require_once("models/config.php");
+	require_once("lib/config.php");
 	
 	//Prevent the user visiting the logged in page if he/she is already logged in
 	if(isUserLoggedIn()) { header("Location: index.php"); die(); }
