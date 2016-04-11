@@ -14,20 +14,28 @@
 
 </head>
 <body>
-<?php require_once("inc/header.php"); ?>
-        <p>Pic 1</p>
-        <p>Pic 2</p>
-        <p>Pic 3</p>
 
+    
+<div class="row">
 
-            
-            <hr>
-<p style="text-align:center">           <a class="btn btn-large" href="login.php">Login</a> 
-<a class="btn btn-danger btn-large" href="register.php">Register</a></p>
-                <br>
-                
+  <div class="col-sm-4"></div>
+
+  <div class="col-sm-4">
+        <center><h1>Mon Bootsite</h1></center>
+        <center><h3>Bienvenue</h3></center>
+        <center><h6>Veuillez vous connecter ou vous enregistrer</h6></center>
+
+        <p style="text-align:center">           <a class="btn btn-large" href="login.php">Login</a>
+        <a class="btn btn-danger btn-large" href="register.php">Register</a></p>
+<br>
 <p style="text-align:center"><a href="forgot-password.php">Forgot password</a> | <a href="resend-activation.php">Resend Activation email</a></p>
-     
+  </div>
+
+  <div class="col-sm-4"></div>
+
+</div>
+
+
 
 
 </body>
