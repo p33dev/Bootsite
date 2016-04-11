@@ -4,10 +4,9 @@ require_once("lib/config.php");
 
 if(!isUserLoggedIn())
 { 
- include('landing-page.php'); 
+ include('public-page.php'); 
 	
  } else { 
-
-header("Location: home.php"); 	 
+ include('home.php')
 
 } ?>
