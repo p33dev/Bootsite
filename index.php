@@ -7,6 +7,6 @@ if(!isUserLoggedIn())
  include('public-page.php'); 
 	
  } else { 
- include('home.php')
+ include('home.php');
 
 } ?>
